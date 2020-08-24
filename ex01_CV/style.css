@@ -3,6 +3,7 @@
 	--color-link: #8a3131;
 	--color-text-title:#aaaaaa;
 	--color-background-card:#DDD;
+	--color-list-subt: #008a07;
 	
 	font-size: 60%;
 }
@@ -89,6 +90,8 @@ a:hover {
 	background-color:var(--color-background-card);
 	
 }
+
+
 
 .vcard {
 	padding: 5px;
