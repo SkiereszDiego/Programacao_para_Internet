@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Trabalho01_HTML_CSS_JS</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        
+	</head>
+	<body>
+        <!--
+        Integrandes:    Diego Skieresz de Oliveira
+                        Mariana Dreyer
+        -->
+		<div id="container">
+			<h1>Cadastro de Novos Usuários</h1>	
+
+            <section class="Form">
+            <h2>Dados Pessoais</h2>
+            <form name="formuser" method="post" action="#">
+            <label>Nome Completo</label><input type="text" name="login" id="Name" required='true' onkeyup="maiuscula(this)"> <br>
+            <label>Endereço</label><input type="text" name="login" id="End" required='true'><br>
+            <label>Cidade</label><input type="text" name="login" id="City" required='true'><br>
+            <label for="Estado">Estado</label>
+
+            <select id="states">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+
+            </select>
+
+            <h2>Dados do Sistema</h2>
+            <label>Nome do Usuário</label><input type="text" name="login" id="login" required='true'><br>
+            <label>Senha</label><input type="password" name="senha1" id="inputSenha" required='true' placeholder="ex. 1234"><br>
+            <label>Confirme a Senha</label><input type="password" name="senha2" id="inputSenha2" required='true' onblur="verificarSenhas()"><br>
+            <input type="submit" value="Cadastrar o Usuário" id="cadastrar" name="cadastrar" onclick="Enviar(); verificarTexto()" >
+
+			</section>			
+		</div>		
+	</body>
+</html>
